@@ -16,11 +16,11 @@ MENU_OPTION = ('NEW GAME 1P',
 
 #e
 ENTITY_SPEED = {
-    'Level1bg0': 0,
-    'Level1bg1': 1,
-    'Level1bg2':2,
-    'Level1bg3':3,
-    'Level1bg4':4,
+    'Level1bg0': 0, #Fundo
+    'Level1bg1': 0.6, #Montanha
+    'Level1bg2':1.6, #Abusto
+    'Level1bg3':2, #Arvore
+    'Level1bg4':3, #Nuvem
 }
 
 
