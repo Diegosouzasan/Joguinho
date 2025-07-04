@@ -21,6 +21,8 @@ ENTITY_SPEED = {
     'Level1bg2':1.6, #Abusto
     'Level1bg3':2, #Arvore
     'Level1bg4':3, #Nuvem
+    'Level1bg5':1.6, #Flor1
+    'Level1bg6':1.6, #Flor2
 }
 
 
