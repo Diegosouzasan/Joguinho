@@ -1,3 +1,4 @@
+import pygame
 from pygame.examples.grid import WINDOW_WIDTH
 
 #c
@@ -24,10 +25,17 @@ ENTITY_SPEED = {
     'Level1bg5':1.6, #Flor1
     'Level1bg6':1.6, #Flor2
     'Level1bg7':1.6,  #Nuvem 2
-    'Player1': 3 #Player 1
+    'Player1':3, #Player 1
+    'Enemy1':2, #Inimigo1
+    'Enemy2':1, #Inimigo2
 }
+EVENT_ENEMY = pygame.USEREVENT + 1
 
 
 #w
 WIN_WIDTH = 634
 WIN_HEIGHT = 422
+
+#s
+
+SPAWN_TIME = 4000
