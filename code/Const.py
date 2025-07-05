@@ -32,6 +32,21 @@ ENTITY_SPEED = {
 EVENT_ENEMY = pygame.USEREVENT + 1
 
 
+ENTITY_HEALTH = {
+    'Level1bg0': 999, #Fundo
+    'Level1bg1': 999, #Montanha
+    'Level1bg2':999, #Abusto
+    'Level1bg3':999, #Arvore
+    'Level1bg4':999, #Nuvem 1
+    'Level1bg5':999, #Flor1
+    'Level1bg6':999, #Flor2
+    'Level1bg7':999,  #Nuvem 2
+    'Player1':300, #Player 1
+    'Enemy1':50, #Inimigo1
+    'Enemy2':60, #Inimigo2
+}
+
+
 #w
 WIN_WIDTH = 634
 WIN_HEIGHT = 422

@@ -11,7 +11,8 @@ from code.Player import Player
 
 class EntityFactory(ABC):
 
-    @abstractmethod
+
+    @staticmethod
     def get_entity(self: str, position=(0, 0)):
         match self:
             case 'Level1bg':
@@ -27,3 +28,4 @@ class EntityFactory(ABC):
                 return Enemy('Enemy1', (WIN_WIDTH + 10, random.randint(40, WIN_HEIGHT - 40)))
             case 'Enemy2':
                 return Enemy('Enemy2', (WIN_WIDTH + 10, random.randint(40, WIN_HEIGHT - 40)))  # Possivel Upgrade
+        return None
