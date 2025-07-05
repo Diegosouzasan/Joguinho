@@ -4,6 +4,9 @@ from pygame.examples.grid import WINDOW_WIDTH
 #c
 COLOR_WHITE =  (240, 251, 248, 98)
 COLOR_BLUE = (231, 249, 251, 98)
+COLOR_GREEN = (0, 128, 0)
+COLOR_CYAN = (0, 128, 128)
+
 
 #y
 COLOR_YELLOW = (252, 230, 40, 99)
@@ -77,8 +80,8 @@ ENTITY_HEALTH = {
     'Player1':300, #Player 1
     'Player1Shot':1,  # Player 1
     #'PlayerShot': 1,  # Player 1
-    'Enemy1':50, #Inimigo1 50
-    'Enemy2':60, #Inimigo2 60
+    'Enemy1':70, #Inimigo1 50
+    'Enemy2':80, #Inimigo2 60
     'Enemy1Shot': 1,  # Inimigo1 tiro
     'Enemy2Shot': 1,  # Inimigo1 tiro
 
