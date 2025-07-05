@@ -15,6 +15,11 @@ MENU_OPTION = ('NEW GAME 1P',
                'SCORE',
                'EXIT')
 
+
+
+#p
+PLAYER_KEY_SHOOT = {'Player1': pygame.K_RCTRL}
+
 #e
 ENTITY_SPEED = {
     'Level1bg0': 0, #Fundo
@@ -26,11 +31,21 @@ ENTITY_SPEED = {
     'Level1bg6':1.6, #Flor2
     'Level1bg7':1.6,  #Nuvem 2
     'Player1':3, #Player 1
-    'Enemy1':2, #Inimigo1
+    'Player1Shot': 3,  # Player tiro
+    'Enemy1':1, #Inimigo1
+    'Enemy1Shot': 5,  # Inimigo1 tiro
     'Enemy2':1, #Inimigo2
+    'Enemy2Shot': 2,  # Inimigo1 tiro
+
 }
 EVENT_ENEMY = pygame.USEREVENT + 1
 
+ENTITY_SHOT_DELAY = {
+    'Player1': 20,
+    'Enemy1': 100,
+    'Enemy2': 200,
+
+}
 
 ENTITY_HEALTH = {
     'Level1bg0': 999, #Fundo
@@ -42,8 +57,13 @@ ENTITY_HEALTH = {
     'Level1bg6':999, #Flor2
     'Level1bg7':999,  #Nuvem 2
     'Player1':300, #Player 1
+    'Player1Shot':1,  # Player 1
+    #'PlayerShot': 1,  # Player 1
     'Enemy1':50, #Inimigo1
     'Enemy2':60, #Inimigo2
+    'Enemy1Shot': 1,  # Inimigo1 tiro
+    'Enemy2Shot': 1,  # Inimigo1 tiro
+
 }
 
 
