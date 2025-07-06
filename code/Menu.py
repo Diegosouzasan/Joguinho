@@ -24,10 +24,31 @@ class Menu:
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
-                    self.menu_text(30, MENU_OPTION[i], COLOR_YELLOW, ((WIN_WIDTH / 2), 200 + 33 * i))
+                    self.menu_text(40, MENU_OPTION[i], COLOR_YELLOW, ((WIN_WIDTH / 2), 220 + 33 * i))
+                    
+                    
 
                 else:
                     self.menu_text(30, MENU_OPTION[i], COLOR_BLUE, ((WIN_WIDTH / 2), 200 + 33 * i))
+
+            self.menu_narrative_text(
+                20,
+                "As chamas tomaram a floresta, e homens de fogo surgiram das cinzas para destruir tudo.",
+                COLOR_WHITE,
+                (WIN_WIDTH / 2, 310)
+            )
+            self.menu_narrative_text(
+                20,
+                "Você é a última esperança: assuma o controle da Onça Pintada, guardiã da natureza,",
+                COLOR_WHITE,
+                (WIN_WIDTH / 2, 330)
+            )
+            self.menu_narrative_text(
+                20,
+                "e lute contra a destruição que assola a Chapada Diamantina.",
+                COLOR_WHITE,
+                (WIN_WIDTH / 2, 350)
+            )
 
             pygame.display.flip()
             # Check for all events
@@ -60,3 +81,12 @@ class Menu:
         text_surf: Surface = text_font.render(text, True, text_color).convert_alpha()
         text_rect: Rect = text_surf.get_rect(center=text_center_pos)
         self.window.blit(source=text_surf, dest=text_rect)
+
+    def menu_narrative_text(self, text_size: int, text: str, text_color: tuple, text_center_pos: tuple):
+        text_font: Font = pygame.font.SysFont(name="Lucida Sans Typewriter", size=text_size)
+        text_surf: Surface = text_font.render(text, True, text_color).convert_alpha()
+        text_rect: Rect = text_surf.get_rect(center=text_center_pos)
+        self.window.blit(source=text_surf, dest=text_rect)
+
+
+

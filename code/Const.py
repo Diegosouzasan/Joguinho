@@ -12,11 +12,7 @@ COLOR_CYAN = (0, 128, 128)
 COLOR_YELLOW = (252, 230, 40, 99)
 
 #M
-MENU_OPTION = ('NEW GAME 1P',
-               'NEW GAME 2P - COOPERATIVE',
-               'NEW GAME 2P- COMPETITIVE',
-               'SCORE',
-               'EXIT')
+MENU_OPTION = ('Jogue Agora',)
 
 
 

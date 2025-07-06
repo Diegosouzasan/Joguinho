@@ -43,7 +43,6 @@ class Level:
                 if ent.name == 'Player1':
                     self.level_text(20, f'Vida do Jogador:{ent.health}', COLOR_GREEN, (10, 25))
 
-
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     pygame.quit()
@@ -52,17 +51,18 @@ class Level:
                     choice = random.choice(('Enemy1', 'Enemy2'))
                     self.entity_list.append(EntityFactory.get_entity(choice))
 
-
-
-
             # printed tex
-            self.level_text(15, f'{self.name} - Timeout: {self.timeout / 1000 :1f}s', COLOR_WHITE, (10, 5))
+            self.level_text(15, f'Level 1', COLOR_WHITE, (10, 5))
             self.level_text(15, f'fps: {clock.get_fps() :0f}s', COLOR_WHITE, (10, WIN_HEIGHT - 35))
             self.level_text(15, f'entidades: {len(self.entity_list)}', COLOR_WHITE, (10, WIN_HEIGHT - 20))
             pygame.display.flip()
 
             EntityMediator.verify_collision(entity_list=self.entity_list)
             EntityMediator.verify_health(entity_list=self.entity_list)
+            # Verificar se o Player morreu
+            player_morto = all(not isinstance(ent, Player) for ent in self.entity_list)
+            if player_morto:
+                return  # Isso faz sair da função e voltar para o menu
 
     pass
 
