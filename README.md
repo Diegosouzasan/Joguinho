@@ -36,19 +36,6 @@ Mesmo sendo o **meu primeiro contato com Python**, este projeto me ensinou muito
 
 ---
 
-## 🖼️ Imagens do Jogo
-
-### Tela Inicial
-<img src="Imagems do Jogo/Tela Inicial.png" alt="Tela inicial do jogo Guardião da Chapada" width="600">
-
-### Gameplay com inimigos
-<img src="Imagems do Jogo/Tela Jogo com os Inimigos.png" alt="Tela do jogo com inimigos" width="600">
-
-### Gameplay em progresso
-<img src="Imagems do Jogo/Tela Jogo Inicado.png" alt="Tela do jogo durante a partida" width="600">
-
----
-
 ## ⚙️ Tecnologias Utilizadas
 
 - **Python 3**
